@@ -1,6 +1,6 @@
 import React from 'react';
 import uautomate from '../../assets/logo2.png';
-import './style.scss';
+
 export class Login extends React.Component{
 
     constructor (props){
@@ -8,7 +8,7 @@ export class Login extends React.Component{
     }
     render(){
         return(
-            <div className="base-container">
+            <div className="base-container" ref={this.props.containerRef}>
                 <div className="header">Login</div>
                 <div className="content">
                     <div className="image">
@@ -33,7 +33,7 @@ export class Login extends React.Component{
                 </div>
 
             </div>
-        )
+        );
     }
 
 }
